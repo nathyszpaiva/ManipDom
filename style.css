@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Parágrafos */
+.paragrafo {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 500px;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 300px;
+}
+
+ul li {
+  background: #fff;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #444;
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease-in-out;
+}
+
+ul li:hover {
+  transform: scale(1.05);
+}
+
+/* Destaque (para highlight) */
+.highlight {
+  background: #ffe08a !important;
+  border-color: #f5c518 !important;
+  font-weight: bold;
+}
+
+/* Campo de texto */
+#campo-texto {
+  width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 12px;
+  transition: border 0.3s ease;
+}
+
+#campo-texto:focus {
+  border-color: #3498db;
+}
+
+/* Botão adicionar */
+#btn-adicionar {
+  background: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btn-adicionar:hover {
+  background: #2980b9;
+}
+
+/* Botão limpar (adicionado pelo JS) */
+button:last-of-type {
+  margin-top: 15px;
+  background: #e74c3c;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:last-of-type:hover {
+  background: #c0392b;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  body {
+    padding: 20px;
+  }
+
+  ul, #campo-texto {
+    width: 100%;
+  }
+}
